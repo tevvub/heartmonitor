@@ -81,8 +81,17 @@
     .catalog__tab {
         font-size: 15px;
     }
- 
+    
 
+    }
+    .feed{
+        &__item{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text{
+            text-align: center;
+        }
     }
 }
 
@@ -194,4 +203,42 @@
             width: 50%;
         }
     }
+    .feed{
+
+        &__text{
+            margin: 18px 0;
+            padding-right: 0;
+            
+        }
+    }
+    .footer{
+        &__info{
+            width: 80%;
+            padding: 40px 48px 30px 48px;
+        }
+        &__addr{
+            margin-bottom: 20px;
+            font-size: 19px;
+            line-height: 15px;
+            font-weight: 500;
+            text-align: center;
+        }
+        &__phone{
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            &:hover{
+                color: #ffffff
+            }
+    }
+    &__social-item{
+        width: 40px;
+        height: 40px;
+        img{
+            height: 20px;
+        }
+    }
+
+}
 }
