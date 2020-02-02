@@ -13,12 +13,28 @@
             max-width: 220px;
         }
     }
-}
+    .carousel{
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
 
 @media (max-width: 767px) {
     .container {
         max-width: 525px;
     }
+    .carousel {
+        &__inner{
+            width: 103%;
+           
+        }
+    }
+
+      
+    
     .header {
         &__phone{
             font-size: 15px;
@@ -55,9 +71,25 @@
             font-size: 13px;
         }
     }
+
+    
+    .catalog {
+        &__content{
+            flex-direction: column;
+            align-items: center;
+        }
+    .catalog__tab {
+        font-size: 15px;
+    }
+ 
+
+    }
 }
 
 @media(max-width:575px) {
+    .container{
+        width: 260px;
+    }
     .header {
         min-height: 200px;
         flex-direction: column;
@@ -84,7 +116,9 @@
         width: 108%;
         &_main{
             width: 77%;
+            font-size: 13px;
         }
+ 
     }
     .promo{
         &__wrapper{
@@ -99,6 +133,7 @@
             margin-top: 0px;
         }
         &__icons{
+            width: 100%;
             margin-top: 30px;
             display: flex;
             flex-direction: column;
@@ -110,6 +145,10 @@
     }
     .title{
         font-size: 23px;
+        &_left {
+            font-size: 27px;
+            text-align: center;
+        }
     }
     .advantages{
         &__wrapper{
@@ -127,6 +166,32 @@
         &__descr{
             font-size: 15px;
             margin-top: 8px;
+        }
+    }
+    .consultation {
+        &__descr{
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+    .feed-form{
+        width: 100%;
+        align-items: center;
+        
+    }
+    .catalog {
+        &__tabs{
+            flex-direction: column;
+            margin-left: -20px;
+        }
+        &__tab{
+            margin-top: 15px;
+        }
+    }
+    .catalog-item{
+        width: 100%;
+        &__list{
+            width: 50%;
         }
     }
 }

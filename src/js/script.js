@@ -8,10 +8,11 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
-                dots: true,
+                dots: false,
                 arrows: false,
                 }
             }
+
         ]
     });
 
@@ -35,7 +36,7 @@ $(document).ready(function(){
             e.preventDefault();
             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-        })
+        }) 
     })
 
     
