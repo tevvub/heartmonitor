@@ -1,5 +1,5 @@
 @import 'base/variables';
-@import 'base/variables';
+@import 'base/animation';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -22,4 +22,5 @@
 @import 'blocks/feed';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 @import 'blocks/media';
